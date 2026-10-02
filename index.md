@@ -1,6 +1,6 @@
 # Noter 隐私政策 / Privacy Policy
 
-最后更新 / Last updated: 2026-10-02
+最后更新 / Last updated: 2026-10-02 (v1.0 build 6)
 
 ## 中文
 
@@ -11,7 +11,8 @@ Noter 是一款在本机转写课堂和会议录音、并用你自己选择的 A
 - 语音识别模型在设备本地运行。
 
 **发送给第三方的数据**
-- 生成笔记时，Noter 会把转写文字发送到你在设置中填写的 AI 服务（例如 DeepSeek、通义千问、Kimi、智谱、OpenAI、OpenRouter 或你自定义的地址）。这些数据由该服务按其自己的隐私政策处理。不填写 API key 就不会发送任何文字。
+- 如果在设置里选择「本机模型」，笔记、翻译和校对全部在设备上完成，不会发送任何内容（只会从 Hugging Face 下载一次模型文件）。
+- 选择在线 AI 服务时，生成笔记、实时翻译和校对会把转写文字发送到你在设置中填写的 AI 服务（例如 DeepSeek、通义千问、Kimi、智谱、OpenAI、OpenRouter 或你自定义的地址）。这些数据由该服务按其自己的隐私政策处理。不填写 API key 就不会发送任何文字。
 - 首次使用时，Noter 会从 Hugging Face（huggingface.co）下载语音模型文件。下载过程中 Hugging Face 能看到你的 IP 地址等常规网络请求信息。
 
 **凭据**
@@ -39,7 +40,8 @@ Noter transcribes lectures and meetings on your device and turns the transcript 
 - Speech recognition runs locally on the device.
 
 **Data sent to third parties**
-- To generate notes, Noter sends transcript text to the AI service you configure in Settings (for example DeepSeek, Qwen, Kimi, Zhipu GLM, OpenAI, OpenRouter, or a custom endpoint). That service handles the data under its own privacy policy. If you do not enter an API key, no text is sent.
+- If you choose the on-device model in Settings, notes, translation and proofreading run entirely on the device and nothing is sent (the model files are downloaded once from Hugging Face).
+- With an online AI service, Noter sends transcript text for notes, live translation and proofreading to the AI service you configure in Settings (for example DeepSeek, Qwen, Kimi, Zhipu GLM, OpenAI, OpenRouter, or a custom endpoint). That service handles the data under its own privacy policy. If you do not enter an API key, no text is sent.
 - On first use, Noter downloads speech model files from Hugging Face (huggingface.co). Hugging Face can see ordinary request information such as your IP address.
 
 **Credentials**
